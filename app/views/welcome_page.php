@@ -577,7 +577,7 @@ defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
         <span class="word-lava">Lava</span><span class="word-lust">Lust</span><br>Framework
     </h1>
     <p class="hero-sub">
-        A lightweight, expressive PHP MVC framework — deployed via GitHub and Render.
+        A lightweight, expressive PHP MVC framework — deployed via GitHub and Render. - Jameson Caimen
     </p>
     <div class="hero-actions">
         <a href="https://lavalust.netlify.app/docs/" target="_blank" class="btn btn-primary">
