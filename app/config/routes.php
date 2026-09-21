@@ -49,12 +49,12 @@ $router->get('/auth/login', 'Auth::login');
 $router->post('/auth/login', 'Auth::login');
 $router->get('/auth/logout', 'Auth::logout');
 // Product CRUD routes
-$router->get('/products', 'Products::index');
-$router->get('/products/create', 'Products::create');
-$router->post('/products/create', 'Products::create');
-$router->get('/products/edit/{id}', 'Products::edit');
-$router->post('/products/edit/{id}', 'Products::edit');
-$router->get('/products/delete/{id}', 'Products::delete');
+$router->get('/products', 'Products::index')->middleware('AuthMiddleware');
+$router->get('/products/create', 'Products::create')->middleware('AuthMiddleware');
+$router->post('/products/create', 'Products::create')->middleware('AuthMiddleware');
+$router->get('/products/edit/{id}', 'Products::edit')->middleware('AuthMiddleware');
+$router->post('/products/edit/{id}', 'Products::edit')->middleware('AuthMiddleware');
+$router->get('/products/delete/{id}', 'Products::delete')->middleware('AuthMiddleware');
 
 $router->get('/', 'Welcome::index');
   

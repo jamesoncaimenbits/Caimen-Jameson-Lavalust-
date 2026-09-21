@@ -6,11 +6,7 @@ class Products extends Controller {
     public function __construct() {
         parent::__construct();
         $this->call->model('Product_model');
-        
-        $this->call->library('session');
-        if (!$this->session->userdata('logged_in')) {
-            redirect('auth/login');
-        }
+        $this->call->library('session');        
     }
 
     public function index() {

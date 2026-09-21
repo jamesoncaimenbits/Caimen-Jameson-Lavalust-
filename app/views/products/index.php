@@ -1,3 +1,6 @@
+<?php
+/** @var array $products */
+?>
 <h2>Product List</h2>
 <a href="<?= base_url('products/create') ?>">Add Product</a> |
 <a href="<?= base_url('auth/logout') ?>">Logout</a>

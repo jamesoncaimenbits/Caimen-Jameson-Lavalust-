@@ -1,3 +1,6 @@
+<?php
+/** @var array $product */
+?>
 <h2>Add Product</h2>
 <form method="post" action="<?= base_url('products/create') ?>">
     <input type="text" name="product_name" placeholder="Product Name" required><br>

@@ -1,3 +1,6 @@
+<?php
+/** @var array $product */
+?>
 <h2>Edit Product</h2>
 <form method="post" action="<?= base_url('products/edit/' . $product['id']) ?>">
     <input type="text" name="product_name" value="<?= $product['product_name'] ?>" required><br>
